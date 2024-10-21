@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full container  */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #d0f7f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+}
+
+/* Google font */
+.archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+  
+
+/* Different types of incomes like income,expense,net balance */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: rgb(12, 189, 12);
+}
+
+/* Expense */
+.expense{
+  color: #e31025;
+}
+
+/* Net Balance */
+.nbalance{
+  color: black;
+  margin-right: 20px;
+}
+
+/* forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+form input[type="text"],
+form input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+}
+
+form div {
+  display: flex;
+  gap: 10px;
+}
+
+/* Button for Add Entry */
+form button {
+  
+  padding: 10px;
+  background-color: rgba(39, 155, 47, 0.768);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 222px;
+}
+
+/* Hover effect for button */
+form button:hover {
+  background-color: #f82d2d;
+  transition: 0.3s;
+  color: black;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* DOM created sections */
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+}
+
+li.income {
+  border-left: 5px solid #28a745;
+}
+
+li.expense {
+  border-left: 5px solid #dc3545;
+}
+
+/* Buttons Edit and Delete */
+li button {
+  background-color: orangered;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+li button:hover{
+  transition: 0.3s;
+  color: black;
+}

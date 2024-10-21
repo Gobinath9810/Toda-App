@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income & Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Income & Expense Tracker</h1>
+        <div class="summary">
+            <div>Total Income: <span id="total-income">0</span></div>
+            <div class="expense">Total Expenses: <span id="total-expenses">0</span></div>
+            <div class="nbalance">Net Balance: <span id="net-balance">0</span></div>
+        </div>
+        <form id="entry-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <div>
+                <input type="radio" id="income" name="type" value="income" checked>
+                <label for="income">Income</label> 
+                <input type="radio" id="expense" name="type" value="expense">
+                <label for="expense">Expense</label>
+            </div>
+            <button type="submit">Add Entry</button>
+        </form>
+        <div class="filters">
+            <input type="radio" id="filter-all" name="filter" value="all" checked>
+            <label for="filter-all">All</label>
+            <input type="radio" id="filter-income" name="filter" value="income">
+            <label for="filter-income">Income</label>
+            <input type="radio" id="filter-expense" name="filter" value="expense">
+            <label for="filter-expense">Expense</label>
+        </div>
+        <ul id="entries-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
